@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    DeviceFrameworks
+    DeviceFrameworks \
+    DeviceSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
