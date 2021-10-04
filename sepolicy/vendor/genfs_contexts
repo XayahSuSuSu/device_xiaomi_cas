@@ -166,3 +166,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-a
 genfscon sysfs /devices/virtual/wakeup/wakeup98                                                                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/0306_02.01.00/wakeup/wakeup99                                                                                                           u:object_r:sysfs_wakeup:s0
 
+# Power_supply
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply                                                                                       u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply                                               u:object_r:sysfs_power_supply:s0
