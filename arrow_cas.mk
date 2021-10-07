@@ -11,14 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit from the Lineage configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the ArrowOS configuration.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-PRODUCT_NAME := lineage_cas
+PRODUCT_NAME := arrow_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
 PRODUCT_MANUFACTURER := Xiaomi
+
+DEVICE_MAINTAINER := Xayah
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
