@@ -6,9 +6,5 @@
   {
     "repository": "android_kernel_xiaomi_sm8250",
     "target_path": "kernel/xiaomi/sm8250"
-  },
-  {
-    "repository": "device_xiaomi_cas-firmware",
-    "target_path": "device/xiaomi/cas-firmware"
   }
 ]
