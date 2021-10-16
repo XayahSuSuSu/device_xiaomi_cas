@@ -16,7 +16,7 @@
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.1.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -30,6 +30,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
@@ -37,6 +42,10 @@ PRODUCT_PACKAGES += \
 # Network
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
+
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
