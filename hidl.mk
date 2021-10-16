@@ -14,9 +14,21 @@
 # limitations under the License.
 #
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
