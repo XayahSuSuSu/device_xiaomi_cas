@@ -18,6 +18,10 @@
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
