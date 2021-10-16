@@ -127,8 +127,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/lineage/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.kona \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+    android.hardware.biometrics.fingerprint@2.3-service.kona
 
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
