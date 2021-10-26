@@ -187,6 +187,9 @@ on boot
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
 
+    # Charging current limitation
+    write /sys/class/power_supply/battery/constant_charge_current_max 6000000
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
