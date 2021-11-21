@@ -131,7 +131,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
-TARGET_KERNEL_CONFIG := vendor/cas_user_defconfig
+TARGET_KERNEL_CONFIG := cas_defconfig
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
