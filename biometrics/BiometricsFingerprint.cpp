@@ -17,7 +17,6 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.kona"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.kona"
 
-#include <android-base/file.h>
 #include <android-base/logging.h>
 #include <hardware/hw_auth_token.h>
 
@@ -46,11 +45,6 @@
 #define DISPPARAM_PATH "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param"
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 
-#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
-
-using ::android::base::ReadFileToString;
-using ::android::base::WriteStringToFile;
-
 namespace {
 
 template <typename T>
@@ -77,19 +71,6 @@ static bool readBool(int fd) {
 
     return c != '0';
 }
-
-// Read value from path and close file.
-static uint32_t ReadFromFile(const std::string& path) {
-    std::string content;
-    ReadFileToString(path, &content, true);
-    return std::stoi(content);
-}
-
-// Write value to path and close file.
-static bool WriteToFile(const std::string& path, uint32_t content) {
-    return WriteStringToFile(std::to_string(content), path);
-}
-
 
 } // anonymous namespace
 
@@ -475,7 +456,6 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t /*x*/, uint32_t /*y*/,
 
 Return<void> BiometricsFingerprint::onFingerUp() {
     set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
-    WriteToFile(BRIGHTNESS_PATH, ReadFromFile(BRIGHTNESS_PATH));
     return Void();
 }
 
