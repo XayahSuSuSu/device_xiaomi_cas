@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 # Inherit from the ArrowOS configuration.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Inherit from the ArrowOS additions
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 PRODUCT_NAME := arrow_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
