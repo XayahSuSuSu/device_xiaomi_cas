@@ -87,6 +87,10 @@ private:
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
     xiaomi_fingerprint_device_t *mDevice;
     android::base::unique_fd touch_fd_;
+
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint follow.
+    Return<void> onShowUdfpsOverlay() override;
+    Return<void> onHideUdfpsOverlay() override;
 };
 
 }  // namespace implementation
