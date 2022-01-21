@@ -463,14 +463,6 @@ Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
     return mDevice->extCmd(mDevice, cmd, param);
 }
 
-Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
-    return Void();
-}
-
-Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
-    return Void();
-}
-
 } // namespace implementation
 }  // namespace V2_3
 }  // namespace fingerprint
