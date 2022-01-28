@@ -1049,10 +1049,6 @@ service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.andro
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
 
-#Set gpu available frequencies property
-on property:vendor.gpu.available_frequencies=*
-    setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-
 on property:vendor.perf.gpu_maxfreq.enable=true
     write /sys/class/kgsl/kgsl-3d0/max_pwrlevel 0
 
