@@ -86,7 +86,7 @@ static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
 
 // List of fingerprint HALs
 static const char *kHALClasses[] = {
-    "fpc",
+    "fpc_fod",
     "goodix_fod",
 };
 
