@@ -1,4 +1,6 @@
+type xiaomiparts_app, domain;
 app_domain(xiaomiparts_app)
+typeattribute xiaomiparts_app mlstrustedsubject;
 
 allow xiaomiparts_app {
   activity_service
@@ -19,6 +21,8 @@ allow xiaomiparts_app {
 
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
 allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+allow xiaomiparts_app system_data_file:dir { search };
 
 allow xiaomiparts_app {
   cgroup
