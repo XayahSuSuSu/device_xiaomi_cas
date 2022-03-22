@@ -1,0 +1,2 @@
+allow vendor_qtelephony unlabeled:file read;
+
