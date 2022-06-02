@@ -416,4 +416,9 @@
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
 
+    <!-- Fast brightness animation ramp rate in brightness units per second -->
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second -->
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
 </resources>
