@@ -153,7 +153,6 @@ ro.hardware.keystore_desede=true
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
