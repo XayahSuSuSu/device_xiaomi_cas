@@ -2,6 +2,9 @@
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+
 # CNE
 persist.vendor.cne.feature=1
 
