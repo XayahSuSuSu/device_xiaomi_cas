@@ -293,6 +293,7 @@ vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/com.qti.feature2.tintless.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/lib-watermarkshim.so|eeb387c170ec3a723e12902d05cce1e7158d8509
 vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
@@ -479,7 +480,7 @@ vendor/lib64/camera/components/com.mi.node.rearvideo.so
 vendor/lib64/camera/components/com.mi.node.skinbeautifier.so
 vendor/lib64/camera/components/com.mi.node.superlowlightraw.so
 vendor/lib64/camera/components/com.mi.node.videobokeh.so
-vendor/lib64/camera/components/com.mi.node.watermark.so
+vendor/lib64/camera/components/com.mi.node.watermark.so|2cfdd63ec2455a411feae1de3ad8d26eccdc2e9d
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
