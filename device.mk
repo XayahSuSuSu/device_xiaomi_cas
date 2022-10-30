@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # CameraGO
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-SHAMIM_V5
+    GCamGOPrebuilt
 
 # Component overrides
 PRODUCT_COPY_FILES += \
