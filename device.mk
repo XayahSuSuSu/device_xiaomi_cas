@@ -146,6 +146,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Camera2
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
